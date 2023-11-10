@@ -2,6 +2,7 @@
 #define max_number 20 
 class Calculator {
 private:
+<<<<<<< HEAD
 	double x, y,b;
 public:
 	Calculator() = default;
@@ -27,4 +28,18 @@ public:
 	double distance_between_points(Calculator obj) const;
 	double herons_formula(Calculator obj)const;
 	void swapp(Calculator& obj)const;
+=======
+	double x, y;
+public:
+	Calculator() = default;
+	Calculator(double x, double y) {
+		if (x >= -max_number && x <= max_number) this->x = x;
+		if (y >= -max_number && y <= max_number) this->y = y;
+	}
+	double getx();
+	double gety();
+	double perimeter(Calculator obj);
+	double square(Calculator obj);
+	double circumference(Calculator obj);
+>>>>>>> 944218325262c9dbec7ffd810917515c2971acc7
 };

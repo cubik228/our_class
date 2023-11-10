@@ -1,4 +1,5 @@
 ﻿  main.cpp
+<<<<<<< HEAD
 D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): error C2664: 'void std::swap<double,0>(_Ty &,_Ty &) noexcept(<expr>)': cannot convert argument 1 from 'double' to '_Ty &'
           with
           [
@@ -18,3 +19,6 @@ D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : 'void std::swap
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\type_traits(2156,19): message : or       'void std::swap(_Ty (&)[_Size],_Ty (&)[_Size]) noexcept(<expr>)'
 D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : 'void std::swap(_Ty (&)[_Size],_Ty (&)[_Size]) noexcept(<expr>)': could not deduce template argument for '_Ty (&)[_Size]' from 'double'
 D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : while trying to match the argument list '(double, double)'
+=======
+  main.vcxproj -> C:\Users\pavli\source\repos\our class\our_class\main\x64\Debug\main.exe
+>>>>>>> 944218325262c9dbec7ffd810917515c2971acc7
