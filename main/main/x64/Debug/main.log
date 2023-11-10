@@ -1,2 +1,20 @@
 ﻿  main.cpp
-  main.vcxproj -> D:\Project\c++_pr\our_class\main\x64\Debug\main.exe
+D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): error C2664: 'void std::swap<double,0>(_Ty &,_Ty &) noexcept(<expr>)': cannot convert argument 1 from 'double' to '_Ty &'
+          with
+          [
+              _Ty=double
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(97,19): message : see declaration of 'std::swap'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3508,19): message : could be 'void std::swap(std::unique_ptr<_Ty,_Dx> &,std::unique_ptr<_Ty,_Dx> &) noexcept'
+D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : 'void std::swap(std::unique_ptr<_Ty,_Dx> &,std::unique_ptr<_Ty,_Dx> &) noexcept': could not deduce template argument for 'std::unique_ptr<_Ty,_Dx> &' from 'double'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3126,6): message : or       'void std::swap(std::weak_ptr<_Ty> &,std::weak_ptr<_Ty> &) noexcept'
+D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : 'void std::swap(std::weak_ptr<_Ty> &,std::weak_ptr<_Ty> &) noexcept': could not deduce template argument for 'std::weak_ptr<_Ty> &' from 'double'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(1994,6): message : or       'void std::swap(std::shared_ptr<_Ty> &,std::shared_ptr<_Ty> &) noexcept'
+D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : 'void std::swap(std::shared_ptr<_Ty> &,std::shared_ptr<_Ty> &) noexcept': could not deduce template argument for 'std::shared_ptr<_Ty> &' from 'double'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xstring(4893,19): message : or       'void std::swap(std::basic_string<_Elem,_Traits,_Alloc> &,std::basic_string<_Elem,_Traits,_Alloc> &) noexcept'
+D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : 'void std::swap(std::basic_string<_Elem,_Traits,_Alloc> &,std::basic_string<_Elem,_Traits,_Alloc> &) noexcept': could not deduce template argument for 'std::basic_string<_Elem,_Traits,_Alloc> &' from 'double'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\utility(468,19): message : or       'void std::swap(std::pair<_Ty1,_Ty2> &,std::pair<_Ty1,_Ty2> &) noexcept(<expr>)'
+D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : 'void std::swap(std::pair<_Ty1,_Ty2> &,std::pair<_Ty1,_Ty2> &) noexcept(<expr>)': could not deduce template argument for 'std::pair<_Ty1,_Ty2> &' from 'double'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\type_traits(2156,19): message : or       'void std::swap(_Ty (&)[_Size],_Ty (&)[_Size]) noexcept(<expr>)'
+D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : 'void std::swap(_Ty (&)[_Size],_Ty (&)[_Size]) noexcept(<expr>)': could not deduce template argument for '_Ty (&)[_Size]' from 'double'
+D:\Project\c++_pr\our_class\main\main\main.cpp(62,14): message : while trying to match the argument list '(double, double)'
