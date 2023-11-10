@@ -1,6 +1,5 @@
 #include <iostream> 
 #include "calculator.h"
-<<<<<<< HEAD
 #include <algorithm>
 #define PI 3.1415
 double Calculator::getx() const { return x; }
@@ -59,30 +58,12 @@ double Calculator::distance_between_points(Calculator obj) const{//16 ,17,18,19,
 double Calculator::herons_formula(Calculator obj)const  {//21
 	return std::sqrt(perimeter(obj, 1. / 2) * (perimeter(obj, 1. / 2) - obj.getx()) * (perimeter(obj, 1. / 2) - obj.gety()) * (perimeter(obj, 1. / 2) - obj.getb()));
 }
-void Calculator::swapp(Calculator& obj)const {///quels
+/*void Calculator::swapp(Calculator& obj)const {///quels
 	std::swap(x, obj.x);
 	std::swap(y, obj.y);
-}
+}*/
 int main()
 {
-	Calculator obj(2,2,2);
-	std::cout<<obj.herons_formula(obj);
-=======
-#define PI 3.1415
-double Calculator::getx() { return x; }
-double Calculator::gety() { return y; }
-double Calculator::perimeter(Calculator obj) {//1,3
-	return 2*(obj.getx()+obj.gety());
-}
-double Calculator::square(Calculator obj) {//2
-	return obj.getx() * obj.getx();
-}
-double Calculator::circumference(Calculator obj) {//4
-	return PI * obj.getx();
-}
-int main()
-{
-	Calculator obj(2, 3);
-	std::cout << obj.circumference(obj);
->>>>>>> 944218325262c9dbec7ffd810917515c2971acc7
+	Calculator obj(2, 2, 2);
+	//std::cout << obj.herons_formula(obj);
 }
